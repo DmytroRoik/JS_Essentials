@@ -29,7 +29,7 @@ function ConvertMoney () {
 	hrn[1]= dollar * moneyRate.dollarRate;
 	var euroToDollar = moneyRate.euroRate/moneyRate.dollarRate;
 
-	alert(euro + ' euros are equal '+ hrn[0] + 'grns, '+ dollar + ' dollars are equal ' + hrn[1] +' grns, one euro is equal '+ euroToDollar.toFixed(3)  +' dollars.');
+	alert(euro + ' euros are equal '+ hrn[0].toFixed(2) + 'grns, '+ dollar + ' dollars are equal ' + hrn[1].toFixed(2) +' grns, one euro is equal '+ euroToDollar.toFixed(3)  +' dollars.');
 }
 
 
