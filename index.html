@@ -3,9 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="first.js"></script>
+	<style>
+		input:invalid {
+  border: 2px dashed red;
+}
+
+	</style>
+	<script src="first.js" defer></script>
 </head>
 <body>
+<form >
+	<label for="nameField" autofocus>Enter name:</label><br>
+	<input type="text" id="nameField" required><br>
 
+	<label for="timeField">Enter time:</label><br>
+	<input type="time" id="timeField" required><br>
+
+	<label for="placeField">Enter place:</label><br>
+	<input type="text" id="placeField" required><br>
+
+	<input type="button" value="Ok" onclick="setValue()">
+</form>
+<button onclick="ConvertMoney()">Конвертер валют</button>
 </body>
 </html>
