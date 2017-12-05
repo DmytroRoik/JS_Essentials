@@ -3,11 +3,11 @@ time,
 place,
 event;
 
+event = prompt("Enter your event:",'meeting');
 function setValue(){
 	name=document.getElementById('nameField').value;
 	time = document.getElementById('timeField').value;
 	place= document.getElementById('placeField').value;
-	event = prompt("Enter your event:",'meeting');
 
 	if(name!=''&&time!=''&&place!='') console.log(name+ ' has a ' +event+ ' today at '+ time+' somewhere in '+ place);
 	else alert('input all data');
